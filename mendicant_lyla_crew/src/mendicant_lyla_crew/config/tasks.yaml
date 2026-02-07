@@ -1,19 +1,35 @@
+# tasks.yaml
 
-
-research_task:
+define_ontology:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Define the initial linear algebra ontology for The Purple Box. 
+    How do we represent financial assets (CEDEARs/ONs) as vector arrays using numpy? 
+    Lyla, coordinate the Engineer's math with the Artist's vision.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A structured schema (YAML or Python Class) defining  properties 
+    and relationships, plus a visual description of how these 
+    connections should "feel" in the UI.
+  agent: lyla
 
-reporting_task:
+implement_math_logic:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    You will will the graph module of the purple box, the libraries we will use are numpy, scipy and networkx. The module should be able to represent financial assets as vector arrays and perform operations like similarity calculations, clustering, and pathfinding.
+     Lyla will oversee the implementation to ensure it aligns with the defined ontology and the Artist's vision for the UI/UX.
+     The Engineer should write clean, efficient, and well-documented code, and also create unit tests to validate the functionality of the module.
+     we will start defining the data structure of the yaml file and the aggregation functions to create the graph.
+  
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A functional Python module with unit tests.
+  agent: creative_engineer
+
+design_ui_ux:
+  description: >
+    Design the UI/UX to visualize the ontology and data flow.
+    The Artist should focus on motion and "lúdico" elements.
+    Additionally, write the bullet points of the session so i can write text scripts for my videos in social medias "media lab"
+    cuz im a content creator and i plan use animation and af to make it more engaging
+  expected_output: >
+    A set of design mockups and a style guide.
+  agent: creative_assistant
+
+
